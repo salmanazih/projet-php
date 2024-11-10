@@ -1,0 +1,445 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color:orange;
+    color: #fff;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.bar {
+    /* Hidden on larger screens */
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.nav ul, .account ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul a, .account ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.nav ul a:hover, .account ul a:hover {
+    color: wheat; /* Highlight color on hover */
+}
+
+.account ul {
+    gap: 15px;
+}
+
+.search {
+    display: hidden; /* Hidden by default */
+}
+.search .active{
+    display: hidden;
+}
+
+.search input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.srchicon {
+    padding-left: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .bar {
+        display: block;
+    }
+    .nav ul, .account ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+    .nav ul.show, .account ul.show {
+        display: flex;
+    }
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 200px 0;
+    background-color: black;
+    border-bottom: 2px solid orange;
+
+}
+
+.main-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.main-slide div:first-child {
+    max-width: 300px;
+}
+
+.main-slide h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main-slide h1 span {
+    display: block;
+    color: orange; /* Highlight color */
+    font-weight: normal;
+    text-decoration: underline;
+    
+}
+
+.main-slide p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.red_btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: orange;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 12px rgba(231, 76, 60, 0.4);
+    text-decoration: none;
+}
+
+.red_btn i {
+    margin-left: 10px;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+.red_btn:hover {
+    background-color: black;
+    transform: translateY(-3px);
+}
+
+.red_btn:hover i {
+    transform: translateX(6px);
+}
+
+/* Image Styling */
+.main-slide img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.main-slide img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .main-slide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-slide div:first-child {
+        max-width: 100%;
+    }
+    
+    .main-slide img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+/* Container for food items */
+.food-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    border-bottom: 2px solid orange;
+}
+
+/* Individual item box */
+.items {
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.items:hover {
+    transform: translateY(-10px); /* Slight raise effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.items img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid orange;
+}
+
+/* Title of the section */
+.items h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: orange;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Description text */
+.items p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding: 0 15px;
+}
+
+/* Button styling */
+.white_btn {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.white_btn:hover {
+    background-color: black;
+}
+/* Main container for the slide */
+.main_slide2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 500px;  /* Adjusted height to fit the layout */
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black; 
+    border-bottom: 2px solid orange; /* Neutral background for the container */
+}
+
+/* Image styling */
+.foodimg {
+    flex: 1; /* Ensure the image takes up equal space */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.foodimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%); /* Darken the image slightly */
+    border-radius: 20px;
+}
+
+/* Quote container (positioned next to the image) */
+.quote {
+    flex: 1.5; /* Give more space to the text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Styling for the main quote (h2) */
+.quote h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+    background: rgba(0, 0, 0, 0.5); /* Dark background for readability */
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Description text styling */
+.quote p {
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    line-height: 1.8;
+    font-family: 'Helvetica', sans-serif;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.6); /* Darker background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional hover effect for the image */
+.main_slide2:hover .foodimg img {
+    filter: brightness(80%); /* Slightly darken the image on hover */
+}
+
+/* Hover effect on the quote text */
+.main_slide2:hover .quote h2 {
+    color: #f39c12; 
+    /* Change color of quote on hover */
+}
+.drink-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    border-bottom: 2px solid orange;
+}
+
+/* Individual item box */
+.items1 {
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.items1:hover {
+    transform: translateY(-10px); /* Slight raise effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.items1 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid orange;
+}
+
+/* Title of the section */
+.items1 h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: orange;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Description text */
+.items1 p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding: 0 15px;
+}
+
+/* Button styling */
+.green_btn {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green_btn:hover {
+    background-color: black;
+}
